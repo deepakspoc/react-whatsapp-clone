@@ -32,7 +32,7 @@ export default function RootLayout({
                 src="/images/chat-bg.webp"
                 alt="chat-bg-image"
                 fill
-                className="object-fill -z-1"
+                className="object-cover -z-1"
               />
 
               {children}
