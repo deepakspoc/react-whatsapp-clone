@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import Sidebar from "@/components/layout/Sidebar";
+import Navbar from "@/components/layout/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
@@ -23,11 +21,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="min-h-screen flex flex-col ">
+        <div className="grid grid-cols-12 h-screen">
+          <Sidebar />
+          <div className="col-span-9 h-screen flex flex-col text-typo">
+            <Navbar />
+            <main className="flex-1 relative p-4">
+              <Image
+                src="/images/chat-bg.webp"
+                alt="chat-bg-image"
+                fill
+                className="object-fill -z-1"
+              />
+
+              {children}
+            </main>
+            <footer className="bg-primary/90 h-15 flex items-center px-4">
+              input box and send button
+            </footer>
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
