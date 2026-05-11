@@ -4,6 +4,7 @@ import "./globals.css";
 import Image from "next/image";
 import Sidebar from "@/components/layout/Sidebar";
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,12 +35,10 @@ export default function RootLayout({
                 fill
                 className="object-cover -z-1"
               />
-
+              
               {children}
             </main>
-            <footer className="bg-primary/90 h-15 flex items-center px-4">
-              input box and send button
-            </footer>
+           <Footer/>
           </div>
         </div>
       </body>
