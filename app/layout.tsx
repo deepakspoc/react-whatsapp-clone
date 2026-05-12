@@ -6,7 +6,6 @@ import Sidebar from "@/components/layout/Sidebar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -24,22 +23,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-screen flex flex-col ">
-        <div className="grid grid-cols-12 h-screen">
-          <Sidebar />
-          <div className="col-span-9 h-screen flex flex-col text-typo">
-            <Navbar />
-            <main className="flex-1 relative p-4">
-              <Image
-                src="/images/chat-bg.webp"
-                alt="chat-bg-image"
-                fill
-                className="object-fill -z-1"
-              />
+      <body className="h-screen flex">
+        <Sidebar />
 
-              {children}
-            </main>
-            <div><Footer/></div>
+        <div className="flex-1 text-typo h-full flex flex-col">
+          <Navbar />
+          <main className="flex-1 relative p-4">
+            <Image
+              src="/images/chat-bg.webp"
+              alt="chat-bg-image"
+              fill
+              className="object-cover -z-1"
+              quality={100}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              loading="eager"
+            />
+
+            {children}
+          </main>
+          <div>
+            <Footer />
           </div>
         </div>
       </body>
