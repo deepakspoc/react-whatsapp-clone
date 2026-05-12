@@ -1,20 +1,38 @@
-import { Mic, Smile,Plus} from "lucide-react";
+"use client"; 
+
+import { Mic, Smile, Plus } from "lucide-react";
 
 const Footer = () => {
+  const handleClick = (buttonName) => {
+    console.log(`${buttonName}`);
+    alert(`${buttonName} clicked`);
+  };
+
   return (
-   <footer className="bg-primary/90 h-15 flex items-center px-4">
-        <div className="flex gap-2 px-2 py-1">
-            <div> <Smile className="text-[#8696A0] hover:cursor-pointer" /></div>
-            <div><Plus className="text-[#8696A0] hover:cursor-pointer"   /></div>
-        </div>           
-        <div className="bg-primary/30 px-4 h-10 w-full rounded-2xl flex items-center mx-2">
-            <input type="text" placeholder="Type a message"
-            className=" text-white px-3 py-1 mt- w-full "/>
-        </div>
+    <footer className="bg-primary/90 h-15 flex items-center px-4">
+      <div className="flex gap-2 px-2 py-1">
+        <button onClick={() => handleClick("Button 1")}>
+          <Smile className="text-[#8696A0] hover:cursor-pointer" />
+        </button>
+        <button onClick={() => handleClick("Button 2")}>
+          <Plus className="text-[#8696A0] hover:cursor-pointer" />
+        </button>
+      </div>
 
-        <div className="mx-2"> <Mic className="text-[#8696A0] hover:cursor-pointer" /></div>
+      {/* Input field */}
+      <div className="px-4 h-10 w-full rounded-2xl flex items-center mx-2">
+        <input
+          type="text"
+          placeholder="Type a message"
+          className="text-white px-3 py-1 w-full rounded-xl bg-[#202C33]"
+        />
+      </div>
+
+      <button onClick={() => handleClick("Button 3")} className="mx-2">
+        <Mic className="text-[#8696A0] hover:cursor-pointer" />
+      </button>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

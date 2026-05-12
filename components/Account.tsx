@@ -2,9 +2,9 @@ import { Pin, User } from "lucide-react";
 
 const Account = () => {
   return (
-    <div className="flex gap-2 py-4 items-center">
+    <div className="flex gap-2 py-4 items-center ">
       {/* Profile avatar name and message */}
-      <div className="flex-1 flex gap-2 min-w-0 items-center">
+      <div className="flex-1 flex gap-2 min-w-0 items-center ">
         <div className="size-12 bg-gray-500 shrink-0 grid place-items-center rounded-full">
           <User />
         </div>
