@@ -3,7 +3,40 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <h1 className="text-2xl font-bold text-center">Home Page</h1>
+     
+        <div className="flex-1 p-6 space-y-4 overflow-auto h-full">
+          <div className="bg-[#202c33] px-4 py-2 rounded-lg w-fit">
+            Hello bro 👋
+          </div>
+
+          <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-lg w-fit">
+            Hi 😄
+          </div>
+          <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-lg w-fit">
+            How are you?
+          </div>
+          <div className="bg-[#202c33] px-4 py-2 rounded-lg w-fit">
+            I am good, thanks for asking. How about you?
+          </div>
+          <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-lg w-fit">
+            I am doing well too, thanks for asking.
+          </div>
+          <div className="bg-[#202c33] px-4 py-2 rounded-lg w-fit">
+            That's great to hear. What are you up to?
+          </div>
+          <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-lg w-fit">
+            Just working on some projects. How about you?
+          </div>
+          <div className="bg-[#202c33] px-4 py-2 rounded-lg w-fit">
+            Same here, just trying to stay productive.
+          </div>
+          <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-lg w-fit">
+            That's good to hear. Let's catch up later.
+          </div>
+          <div className="bg-[#202c33] px-4 py-2 rounded-lg w-fit">
+            Sure, talk to you later!
+            </div>
+        </div>
     </div>
   );
 }
