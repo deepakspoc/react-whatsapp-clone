@@ -14,7 +14,7 @@ const Account = () => {
           <div className="text-sm truncate">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut
             voluptas hic neque, nulla quis quo dignissimos sunt iusto quae
-            maxime eaque, vel eligendi nihil molestias debitis labore, dolorum
+            maxime eaque, vel eligendi nihil molestias debitis labore, dolorum 
             facilis.
           </div>
         </div>
