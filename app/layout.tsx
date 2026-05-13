@@ -28,7 +28,7 @@ export default function RootLayout({
 
         <div className="flex-1 text-typo h-full flex flex-col">
           <Navbar />
-          <main className="flex-1 relative p-4">
+          <main className= "flex-1 relative p-4">
             <Image
               src="/images/chat-bg.webp"
               alt="chat-bg-image"

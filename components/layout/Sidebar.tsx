@@ -19,7 +19,7 @@ const Sidebar = () => {
           {/* MESSAGES */}
           <button className="relative size-10 hover:cursor-pointer bg-gray-500 grid place-items-center rounded-full">
             <span className="absolute -top-1 -right-1 size-5 text-xs grid place-items-center bg-green-700 rounded-full">
-              10
+              1
             </span>
             <span>
               {" "}
@@ -115,7 +115,7 @@ const Sidebar = () => {
               </div>
               <div>
                 <button className="text-green-500 justify m-2 hover:cursor-pointer">
-                  2
+                  9
                 </button>
               </div>
             </div>
