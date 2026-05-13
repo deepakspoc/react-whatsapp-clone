@@ -22,7 +22,7 @@ const Account = () => {
 
       {/* Time and pin icon section */}
       <div className="flex flex-col items-end gap-1">
-        <span className="text-xs text-gray-400">12:18</span>
+        <span className="text-xs text-gray-400">12:180</span>
         <span className="text-gray-400">
           <Pin size={14} className="rotate-45" />
         </span>
