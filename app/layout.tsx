@@ -28,8 +28,9 @@ export default function RootLayout({
 
         <div className="flex-1 text-typo h-full flex flex-col">
           <Navbar />
-          <main className="flex-1 relative p-4">
-            <Image
+          <main className="flex-1 relative p-4 overflow-auto h-full bg-[url('/images/chat-bg.webp')] bg-cover">
+
+            {/* <Image
               src="/images/chat-bg.webp"
               alt="chat-bg-image"
               fill
@@ -37,7 +38,8 @@ export default function RootLayout({
               quality={100}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               loading="eager"
-            />
+            /> */}
+
 
             {children}
           </main>

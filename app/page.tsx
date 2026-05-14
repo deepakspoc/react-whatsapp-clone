@@ -5,11 +5,11 @@ export default function Home() {
     <div>
      
         <div className="flex-1 p-6 space-y-4 overflow-auto h-full">
-          <div className="bg-[#202c33] px-4 py-2 rounded-lg w-fit">
+          <div className="bg-[#202c33] px-4 py-2 rounded-b-lg rounded-tr-lg w-fit arrow-left">
             Hello bro 👋
           </div>
 
-          <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-lg w-fit">
+          <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-l-lg rounded-br-lg w-fit arrow-right">
             Hi 😄
           </div>
           <div className="bg-[#005c4b] ml-auto px-4 py-2 rounded-lg w-fit">

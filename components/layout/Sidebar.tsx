@@ -22,8 +22,7 @@ const Sidebar = () => {
               10
             </span>
             <span>
-              {" "}
-              <MessageSquare />{" "}
+              <MessageSquare />
             </span>
           </button>
           {/* STATUS */}
@@ -89,17 +88,17 @@ const Sidebar = () => {
             </div>
             {/* FILTERS */}
             <div className="gap-4 px-6 flex items-center mt-4 w-full">
-              <div className=" size-8 text-green-500 bg-[#202C33] rounded-full ">
-                <button className="size-8 grid place-items-center hover:cursor-pointer">
+              <div className=" px-2  text-green-500 bg-[#202C33] rounded-full ">
+                <button className=" grid place-items-center hover:cursor-pointer">
                   All
                 </button>
               </div>
-              <div className="p-1 text-[#AEBAC1] bg-[#202C33] rounded-full ">
+              <div className="px-2 text-[#AEBAC1] bg-[#202C33] rounded-full ">
                 <button className="grid place-items-center hover:cursor-pointer">
                   Unread
                 </button>
               </div>
-              <div className="p-1 text-[#AEBAC1] bg-[#202C33] rounded-full ">
+              <div className="px-2 text-[#AEBAC1] bg-[#202C33] rounded-full ">
                 <button className="hover:cursor-pointer">Groups</button>
               </div>
             </div>
